@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>RecoMovie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="{{ url_for('static', filename='blog.min.css') }}" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Auto Complete -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  </head>
+
+
+  <body style="background-image: url('{{ url_for('static', filename='image.jpg') }}'); background-repeat: no-repeat; background-size: fill;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="http://localhost:5000/home">RecoMovie</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:5000/genres">Genre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+
+      <div class="ml-container" style="display: block;">
+        <br><br><br><br><br><br>
+        <center><h1 style="">Recommend based on Genre</h1></center>
+        <form action = "http://localhost:5000/genre" method = "POST">
+        <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
+            <input type="text" name="Genre" class="movie form-control" id="autoComplete" placeholder="Enter the Genre" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
+            <br>
+        </div>
+    
+        <div class="form-group" style="text-align: center;">
+          <button type = "submit" value="submit" class="btn btn-primary btn-block movie-button" style="background-color: #e50914;text-align: center;border-color: #e50914;width:120px;">Enter</button><br><br>
+        </div>
+      </form>
+      </div>
+
+      <!-- <div class="container">
+        <div class="row"><p><center>
+          <button type="button" style="height: 50px; margin:5px;">Action</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Adventure</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Animation</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Children</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Comedy</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Crime</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Documentary</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Drama</button>&nbsp;&nbsp;
+          <button type="button" style="height: 50px; margin:5px;">Fantasy</button>&nbsp;&nbsp;</center></p>
+        </div>
+      </div>
+  
+      <div class="container">
+          <div class="row"><p><center><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Film-Noir</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Horror</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Musical</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Mystery</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Romance</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Sci-Fi</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Thriller</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">War</button>&nbsp;&nbsp;
+              <button type="button" style="height: 50px; margin:5px;">Western</button>&nbsp;&nbsp;</center></p>
+          </div>
+        </div> -->
+
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='blog.min.js') }}"></script>
+
+  </body>
+</html>
