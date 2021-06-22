@@ -1,5 +1,5 @@
 ## Movie Recommendation System (Website)
-Movie Recommedation System created using Collaborative Filtering (Website) and Content based Filtering (Juypter Notebook).
+Movie Recommendation System created using Collaborative Filtering (Website) and Content based Filtering (Jupyter Notebook).
 
 ### Objectives
 
