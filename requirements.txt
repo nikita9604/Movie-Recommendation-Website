@@ -16,5 +16,5 @@ urllib3==1.26.5
 requests==2.23.0
 pickleshare==0.7.5
 ipykernel==5.3.4
-ipython==7.19.0
+ipython==7.31.1
 ipython-genutils==0.2.0
