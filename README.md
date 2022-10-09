@@ -22,8 +22,10 @@ Movie Recommendation System created using Collaborative Filtering (Website) and 
 <img src = 'flow-diagram.JPG' height="400px">
 </div>
 
+
 ### Deployment
   - The application deployed can be accessed and tested directly from [here](https://recomovie-9604.herokuapp.com/) or https://recomovie-9604.herokuapp.com/
+  - Currently the links are working perfectly and can be checked through.
 
 ### References
   - https://github.com/kishan0725/AJAX-Movie-Recommendation-System-with-Sentiment-Analysis
